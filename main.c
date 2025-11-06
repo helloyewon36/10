@@ -3,12 +3,27 @@
 
 int main(int argc, char *argv[])
 {
-    char src[]="the worst things to eat before you sleep";
-    char dst[100];
+    char input[100];
+     FILE* fp;
+     
+     fp=fopen("sample.txt","w" );
+     
+     for (i=0;i<3;i++)
+     {
+     
+     
+     
+      printf("input a word: ");
+      scanf("%s", input);
+      fprintf(fp,"%s\n", input);
+     }
+     
+     
+     
+     
+     fclose(fp);
+     
     
-    strcpy(dst,src);
-    
-    printf("copied string :%s\n", dst);
     
   
   system("PAUSE");	
