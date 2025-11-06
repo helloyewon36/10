@@ -5,6 +5,7 @@ int main(int argc, char *argv[])
 {
     char input[100];
      FILE* fp;
+     int i;
      
      fp=fopen("sample.txt","w" );
      
